@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hotel-booking
+  mvc:
+    problemdetails:
+      enabled: true
+
+hotel:
+  booking:
+    # How long inventory is held for a booking awaiting payment.
+    hold-duration: PT15M
+    # How often lapsed holds are swept and their inventory released.
+    hold-sweep-interval: PT30S
+    max-nights: 30
+    # FLEXIBLE policy: full refund when cancelled at least this long before check-in.
+    free-cancellation-window: PT24H
+  pricing:
+    # STANDARD | WEEKEND_SURCHARGE
+    strategy: STANDARD
+    weekend-surcharge-percent: 20
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
