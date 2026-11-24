@@ -5,8 +5,6 @@ A Spring Boot backend for a hotel booking platform. Owners onboard properties, a
 - **Stack:** Java 17+, Spring Boot 3.3, in-memory storage behind repository interfaces, mocked payment gateway.
 - **Bonus items:** concurrent-booking safety, pluggable pricing, idempotent payments, OpenAPI/Swagger.
 
-The full API reference, diagrams and reasoning behind each decision are in **[docs/DESIGN.md](docs/DESIGN.md)**.
-
 ## Run
 
 JDK 17+ is required. Maven is not needed because the wrapper is included.
